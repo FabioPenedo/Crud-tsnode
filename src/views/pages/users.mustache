@@ -1,0 +1,20 @@
+{{>partials/header}}
+    <div class="information">
+        <div class="search"></div>
+        <div class="list">
+            <div class="newUser">
+                <h2>Usuários:</h2>
+                <a href="">Novo Usuário</a>
+            </div>
+            {{#usersList}}
+                <div class="list--field">
+                    <span>{{name}} - {{age}}- {{email}}</span>
+                    <div class="images">
+                        <a href="/usuario/{{id}}/editar"><img src="images/user-profile.png" alt=""></a>
+                        <a href="/usuario/{{id}}/excluir"><img src="images/remove-user.png" alt=""></a>
+                    </div>
+                </div>
+            {{/usersList}}
+        </div>
+    </div>
+{{>partials/footer}}

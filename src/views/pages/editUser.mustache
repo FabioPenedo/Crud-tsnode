@@ -1,0 +1,13 @@
+{{>partials/header}}
+    <fieldset>
+        <legend>Editar Usuário</legend>
+        {{#userResults}}
+            <form method="POST" action="/novousuarioeditado/{{id}}">
+                <input type="email" name="email" placeholder="Seu email" value="{{email}}" required /><br/><br/>
+                <input type="text" name="name" placeholder="Seu nome" value="{{name}}" required /><br/><br/>
+                <input type="text" name="age" placeholder="Sua idade" value="{{age}}" /><br/><br/>
+                <input type="submit" value="Cadastrar">
+            </form>
+        {{/userResults}}
+    </fieldset>
+{{>partials/footer}}
