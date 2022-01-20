@@ -1,0 +1,11 @@
+{{>partials/header}}
+    <fieldset>
+        <legend>Novo Usuário</legend>
+        <form method="POST" action="/usuario">
+            <input type="email" name="email" placeholder="Seu email" required /><br/><br/>
+            <input type="text" name="name" placeholder="Seu nome" required /><br/><br/>
+            <input type="text" name="age" placeholder="Sua idade"  required /><br/><br/>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </fieldset>
+{{>partials/footer}}
