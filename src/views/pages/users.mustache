@@ -1,17 +1,31 @@
 {{>partials/header}}
     <div class="information">
-        <div class="search"></div>
+        <div class="search">
+            <img src="images/search.png" alt="">
+            <form method="GET" action="/search">
+                <input type="text" name="search" placeholder="Pesquise o nome" value="{{query}}">
+            </form>
+        </div>
         <div class="list">
             <div class="newUser">
-                <h2>Usuários:</h2>
-                <a href="">Novo Usuário</a>
+                <a href="/cadastro">Novo Usuário</a>
             </div>
+            <h1>Usuários</h1>
+            {{#usersSearch}}
+                <div class="list--field">
+                    <span>{{name}}</span>
+                    <div class="images">
+                        <a href="/usuario/{{id}}/editar"><img src="images/edit.png" alt=""></a>
+                        <a href="/usuario/{{id}}/excluir"><img src="images/delete.png" alt=""></a>
+                    </div>
+                </div>
+            {{/usersSearch}}
             {{#usersList}}
                 <div class="list--field">
-                    <span>{{name}} - {{age}}- {{email}}</span>
+                    <span>{{name}}</span>
                     <div class="images">
-                        <a href="/usuario/{{id}}/editar"><img src="images/user-profile.png" alt=""></a>
-                        <a href="/usuario/{{id}}/excluir"><img src="images/remove-user.png" alt=""></a>
+                        <a href="/usuario/{{id}}/editar"><img src="images/edit.png" alt=""></a>
+                        <a href="/usuario/{{id}}/excluir"><img src="images/delete.png" alt=""></a>
                     </div>
                 </div>
             {{/usersList}}

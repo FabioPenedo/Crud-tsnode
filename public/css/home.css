@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  height: 100vh;
+}
+body .background {
+  background-image: url(../images/bcg.png);
+  background-size: cover;
+  background-position: center;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .background .area--form {
+  background-color: lightgreen;
+  width: 100%;
+  max-width: 460px;
+  height: 590px;
+  background: #EDF2F4;
+  box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.66);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .background .area--form h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  color: #2B2D42;
+  text-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+body .background .area--form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+}
+body .background .area--form form .area--inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: inherit;
+  height: 295px;
+  margin-left: 50px;
+}
+body .background .area--form form .area--inputs .input--email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #000;
+}
+body .background .area--form form .area--inputs .input--email input {
+  height: 40px;
+  border: 0;
+  background-color: #EDF2F4;
+  outline: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+body .background .area--form form .area--inputs .input--email #img--email {
+  background-image: url(../images/email.png);
+  background-size: cover;
+  background-position: center;
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+  margin-left: 5px;
+}
+body .background .area--form form .area--inputs .input--name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #000;
+}
+body .background .area--form form .area--inputs .input--name input {
+  height: 40px;
+  border: 0;
+  background-color: #EDF2F4;
+  outline: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+body .background .area--form form .area--inputs .input--name #img--name {
+  background-image: url(../images/name.png);
+  background-size: cover;
+  background-position: center;
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+  margin-left: 5px;
+}
+body .background .area--form form .area--inputs .input--age {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #000;
+}
+body .background .area--form form .area--inputs .input--age input {
+  height: 40px;
+  border: 0;
+  background-color: #EDF2F4;
+  outline: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+body .background .area--form form .area--inputs .input--age #img--age {
+  background-image: url(../images/age.png);
+  background-size: cover;
+  background-position: center;
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+  margin-left: 5px;
+}
+body .background .area--form form .area--inputs .input--submit {
+  width: 179px;
+  height: 56px;
+  background-color: #D90429;
+  box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
+  border: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+body .background .footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #EDF2F4;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+body .background .footer a {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #D90429;
+  text-decoration: none;
+}
+body .background .footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-height: 670px) {
+  body .background {
+    flex-direction: column;
+  }
+  body .background .footer {
+    position: static;
+  }
+}
+@media (max-height: 500px) {
+  body .background {
+    height: auto;
+  }
+}

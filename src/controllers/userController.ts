@@ -30,7 +30,7 @@ export const newUser = async (req: Request, res: Response)=>{
         }
         await userInsert.save()
     }
-    res.redirect('/usuario')
+    res.redirect('/usuarios')
 }
 
 export const editUser = async (req: Request, res: Response)=>{
@@ -70,7 +70,7 @@ export const newEditUser = async (req: Request, res: Response)=>{
         user.age = parseInt(age)
         await user.save()
     }
-    res.redirect('/usuario')
+    res.redirect('/usuarios')
 }
 
 export const deleteUser = async (req: Request, res: Response)=>{
@@ -79,5 +79,5 @@ export const deleteUser = async (req: Request, res: Response)=>{
             id: req.params.id
         }
     })
-    res.redirect('/usuario')
+    res.redirect('/usuarios')
 }

@@ -25,6 +25,6 @@ export const User = sequelize.define<UserInstance>('User', {
         defaultValue: 18
     }
 }, {
-    tableName: 'crud-users',
+    tableName: 'users',
     timestamps: false
 });

@@ -1,13 +1,27 @@
 {{>partials/header}}
-    <fieldset>
-        <legend>Editar Usuário</legend>
-        {{#userResults}}
-            <form method="POST" action="/novousuarioeditado/{{id}}">
-                <input type="email" name="email" placeholder="Seu email" value="{{email}}" required /><br/><br/>
-                <input type="text" name="name" placeholder="Seu nome" value="{{name}}" required /><br/><br/>
-                <input type="text" name="age" placeholder="Sua idade" value="{{age}}" /><br/><br/>
-                <input type="submit" value="Cadastrar">
-            </form>
-        {{/userResults}}
-    </fieldset>
+    <div class="background">
+        <div class="area--form">
+            <h1>Editar Usuário</h1>
+            {{#userResults}}
+                <form method="POST" action="/novousuarioeditado/{{id}}">
+                    <div class="area--inputs">
+                        <div class="input--email">
+                            <input type="email" name="email" placeholder="Email" value="{{email}}" required />
+                            <div id="img--email"></div>
+                        </div>
+                        <div class="input--name">
+                            <input type="text" name="name" placeholder="Nome" value="{{name}}"  required />
+                            <div id="img--name"></div>
+                        </div>
+                        <div class="input--age">
+                            <input type="text" name="age" placeholder="Idade" value="{{age}}"  />
+                            <div id="img--age"></div>
+                        </div>
+                        <input class="input--submit" type="submit" value="Alterar">
+                    </div>
+                </form>
+            {{/userResults}}
+        </div>
+        <div class="footer"><span>Criado por</span> <a href="https://github.com/FabioPenedo" target="_blank">Fábio Penedo</a></div>
+    </div>
 {{>partials/footer}}

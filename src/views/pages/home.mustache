@@ -1,11 +1,25 @@
 {{>partials/header}}
-    <fieldset>
-        <legend>Novo Usuário</legend>
-        <form method="POST" action="/novousuario">
-            <input type="email" name="email" placeholder="Seu email" required /><br/><br/>
-            <input type="text" name="name" placeholder="Seu nome" required /><br/><br/>
-            <input type="text" name="age" placeholder="Sua idade" /><br/><br/>
-            <input type="submit" value="Cadastrar">
-        </form>
-    </fieldset>
+    <div class="background">
+        <div class="area--form">
+            <h1>Novo Usuário</h1>
+            <form method="POST" action="/novousuario">
+                <div class="area--inputs">
+                    <div class="input--email">
+                        <input type="email" name="email" placeholder="Email" required />
+                        <div id="img--email"></div>
+                    </div>
+                    <div class="input--name">
+                        <input type="text" name="name" placeholder="Nome" required />
+                        <div id="img--name"></div>
+                    </div>
+                    <div class="input--age">
+                        <input type="text" name="age" placeholder="Idade" />
+                        <div id="img--age"></div>
+                    </div>
+                    <input class="input--submit" type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+        <div class="footer"><span>Criado por</span> <a href="https://github.com/FabioPenedo" target="_blank">Fábio Penedo</a></div>
+    </div>
 {{>partials/footer}}
