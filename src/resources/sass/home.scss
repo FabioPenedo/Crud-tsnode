@@ -13,6 +13,24 @@ body {
     font-family: $font;
     height: 100vh;
 
+    .notfound {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-family: $font;
+            color: $font-color-1;
+        }
+        
+        img {
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
     .background {
         background-image: url(../images/bcg.png);
         background-size: cover;

@@ -6,7 +6,7 @@ Crud-tsnode um CRUD simples.
 
 ## 🌐 Web
 
-https://nome.herokuapp.com/
+https://penedocrud.herokuapp.com/
 
 ## 🧱 Tecnologias
 
@@ -15,7 +15,7 @@ https://nome.herokuapp.com/
 + JavaScript
 + Mustache
 + PostgreSQL
-+ CSS
++ SASS
 
 ## ✨ Executar localmente
 

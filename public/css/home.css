@@ -8,6 +8,21 @@ body {
   font-family: "Poppins";
   height: 100vh;
 }
+body .notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .notfound h2 {
+  font-family: "Poppins";
+  color: #2B2D42;
+}
+body .notfound img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
 body .background {
   background-image: url(../images/bcg.png);
   background-size: cover;
