@@ -43,6 +43,15 @@ Instale as dependências
 npm install
 ```
 
+Váriaveis de ambiente, .env.example: 
+
+```bash
+PG_DB=postgres=   *Nome do banco de dados*
+PG_USER=   *Nome do usuário no banco de dados*
+PG_PASSWORD=   *Senha do usuário no banco de dados*
+PG_PORT=   *Porta do banco de dados*
+```
+
 Inicie o servidor
 
 ```bash

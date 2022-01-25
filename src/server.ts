@@ -17,4 +17,4 @@ server.use(mainRoutes);
 server.use((req: Request, res: Response)=>{
     res.status(404).render('pages/404')
 });
-server.listen(process.env.PORT);
+server.listen(process.env.PORT || 3000);
