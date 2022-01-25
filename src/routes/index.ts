@@ -4,8 +4,8 @@ import * as UserController from '../controllers/userController'
 import * as SearchController from '../controllers/searchController'
 
 const router = Router()
-
-router.get('/cadastro', HomeController.home)
+router.get('/', HomeController.home)
+router.get('/cadastro', HomeController.register)
 router.get('/usuarios', UserController.users)
 router.post('/novousuario', UserController.newUser)
 router.get('/usuario/:id/editar', UserController.editUser)
