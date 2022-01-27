@@ -43,17 +43,19 @@ Instale as dependências
 npm install
 ```
 
+Váriaveis de ambiente, .env.example: 
+
+```bash
+PG_DB=   *Nome do banco de dados*
+PG_USER=   *Nome do usuário no banco de dados*
+PG_PASSWORD=   *Senha do usuário no banco de dados*
+PG_PORT=   *Porta do banco de dados*
+```
+
 Inicie o servidor
 
 ```bash
 npm run start-dev
 ```
 
-## 🚀 Deploy
-
-```bash
-heroku create
-git push heroku main
-heroku open
-```
 Feito por Fábio Penedo: 👋 [Entre em contato](https://www.linkedin.com/in/fabiopenedo/)
